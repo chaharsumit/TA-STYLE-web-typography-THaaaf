@@ -1,0 +1,271 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+  box-sizing: border-box;
+}
+
+/* Custom CSS */
+/*
+font-family: 'DM Serif Display', serif;
+font-family: 'Karla', sans-serif;
+*/
+body{
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: 'Karla', serif;
+  color: #ffffff;
+}
+
+h1,h2,h3,h4,h5,h6, .brand-name{
+  font-family: 'DM Serif Display', serif;
+}
+
+
+.flex-container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.container{
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.bg-dark{
+  background-color: #2d2640;
+}
+
+hr{
+  width: 200px;
+  margin-left: 0px;
+  border-color: #c3c3c5;
+}
+
+/* header styles */
+
+.header{
+  padding: 24px 0;
+  line-height: 1;
+}
+
+.brand-name{
+  text-decoration: none;
+  color: #2d2640;
+  font-size: 42px;
+  letter-spacing: -2.2px;
+  font-weight: 400;
+}
+
+.main-nav{
+  width: 450px;
+  justify-content: space-between;
+}
+
+.nav-item{
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 18px;
+  color: #6e6b74;
+}
+
+.nav-item, .btn{
+  font-weight: 700;
+}
+
+.btn{
+  font-size: 18px;
+  border-radius: 2px;
+  padding: 12px 12px;
+  text-transform: uppercase;
+}
+
+.btn-dark{
+  color: #6e6b74;
+  background: none;
+  border: 1px solid #6e6b74;
+}
+
+.btn-light{
+  color: #ffffff;
+  background: none;
+  border: 1px solid #ffffff;
+}
+
+/* hero styles */
+.hero .flex-container{
+  align-items: flex-start;
+}
+.hero{
+  padding-top: 80px;
+  position: relative;
+  height: 600px;
+}
+.hero-left{
+  flex: 0 1 49%;
+}
+.heading{
+  line-height: 1.2;
+  font-size: 73px;
+  margin: 20px 0;
+  text-transform: capitalize;
+  padding-right: 180px;
+}
+.text{
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 36px; 
+}
+.hero-image{
+  position: absolute;
+  top: 12%;
+  right: 11%;
+  height: 700px;
+}
+
+/* content styles */
+.content{
+  padding-top: 250px;
+}
+.content-image{
+  width: 45%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.hero-right{
+  width: 45%;
+}
+.content-heading{
+  color: #01122d;
+  font-size: 48px;
+}
+.content .text{
+  color: #6e6b74;
+  font-weight: 500;
+  margin-top: 12px;
+  padding-right: 100px;
+}
+
+/* services styles */
+
+.services{
+  padding-top: 120px;
+  color: #01122d;
+}
+.services-container{
+  margin-top: 42px;
+  flex: 0 1 24%;
+}
+.icon{
+  padding: 12px 12px;
+  border-radius: 50%;
+  font-size: 24px;
+  color: #ffffff;
+  background-color: #8ab4f0;
+  margin: 0 0 18px 12px;
+}
+.heading-sm{
+  font-size: 24px;
+  color: #01122d;
+}
+.services .text{
+  font-weight: 500;
+  color: #6e6b74;
+  letter-spacing: -2px;
+}
+
+/* work */
+
+.work{
+  padding-top: 60px;
+}
+
+.work .container{
+  padding: 80px 80px 80px 80px;
+}
+
+.work .content-heading{
+  width: 32%;
+  color: #ffffff;
+}
+
+.work-footer .border-container{
+  margin-top: 56px;
+  padding: 0;
+  border-bottom: 1px solid #2d2640;
+}
+
+.work-footer i{
+  color: #6e6b74;
+  margin-left: 20px;
+  font-size: 32px;
+}
+
+.footer-nav{
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+  padding: 24px 0;
+}
+
+.footer-nav-items{
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #706c6c;
+}
+
+/* footer */
+
+.footer{
+  padding: 32px 0;
+  text-align: center;
+  color: #888b9f;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
